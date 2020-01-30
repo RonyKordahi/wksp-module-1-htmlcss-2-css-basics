@@ -1,15 +1,16 @@
 p {
-
-}
-
-.one {
-
-}
-
-.two {
-
-}
-
-.three {
-
-}
+    margin: 0;
+  }
+  
+  .one {
+    background: pink;
+  }
+  
+  .two {
+    
+    background: #FF00FF;
+  }
+  
+  .three {
+    font-size: 5em;
+  }
