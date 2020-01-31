@@ -27,6 +27,7 @@ h1 {
 
 h2 {
 	margin-bottom: 10px;
+	font-size: 1.5em;
 }
 
 h3 {
@@ -38,11 +39,11 @@ h3 {
 .row {
 	list-style-type: none;
 	display: flex;
-	justify-content: space-around;
 	margin-bottom: 20px;
 }
 
 .col {
+	margin: 0 10px;
 	border: 2px;
 	border-style: dashed;
 	background: #d3d3d3;
