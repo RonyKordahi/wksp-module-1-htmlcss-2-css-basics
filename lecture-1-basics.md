@@ -61,6 +61,7 @@ h1 {
 .blog-title {
     font-size: 32px;
 }
+When referencing a class, it needs a "." in front of it. Classes cannot have spaces, only dashes. 
 ```
 
 ---

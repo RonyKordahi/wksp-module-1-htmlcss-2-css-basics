@@ -31,8 +31,9 @@ Write the CSS to make the cat text blue.
 ```
 
 ```css
-/* css here */
-
+    .feline {
+        color: blue;
+    }
 ```
 
 ---
@@ -48,8 +49,10 @@ Write the CSS to make the cat text blue.
 ```
 
 ```css
-/* css here */
-
+    h2 {
+        color: blue;
+    }
+(h2 is not a class, cannot be referenced as a class, referenced as a property instead)
 ```
 
 ---
@@ -64,7 +67,9 @@ Write the CSS to make the cat text blue.
 ```
 
 ```css
-/* css here */
+    .royalcat {
+        color: blue;
+    }
 
 ```
 
@@ -81,7 +86,9 @@ Write the CSS to make the dogs text red.
 ```
 
 ```css
-/* css here */
+    .canine {
+        color: red;
+    }
 
 ```
 
@@ -98,7 +105,9 @@ Write the CSS to make the dogs text red.
 ```
 
 ```css
-/* css here */
+    h1 {
+           color: red;
+     }
 
 ```
 
@@ -118,6 +127,7 @@ p {
     color: red
 }
 
+p is blue
 ```
 
 ---
@@ -146,14 +156,15 @@ Every HTML element is a box that has 4 properties.
 | `margin-left`   |
 | `margin-right`  |
 | `margin-bottom` |
+| `margin-top`    |
 
 --- 
 
 - Shorthand is best
     - `margin: top | right | bottom | left`
-    - `margin: 20px 10px 5px 0`
-    - `margin: 20px 10px`
-    - `margin: 20px`
+    - `margin: 20px 10px 5px 0`;
+    - `margin: 20px 10px`; (missing values clone opposite sides, here bottom and left are cloning top and right)
+    - `margin: 20px`;
 
 ---
 
@@ -171,6 +182,8 @@ What is the width and height of this box?
     padding: 25px;
     width: 100px;
 }
+
+border width and height = 25 (padding) + 100 (width) + 100 (height) + 10 (border-width)
 ```
 
 ---
@@ -183,7 +196,7 @@ We can fix this with the `box-sizing` CSS property.
 }
 ```
 
-_What is the meaning of `*`?_
+_What is the meaning of `*`?_ It means everything
 
 ---
 
@@ -302,7 +315,7 @@ Note: When using this property, you will need to set the parent's position as we
 ```html
 <div class="container">
    <p>Hey!</p>
-   <p class="child">there!</div>
+   <p class="child">there!</p>
 </div>
 ```
 
@@ -341,7 +354,7 @@ Note: When using this property, you will need to set the parent's position as we
 
 - Give the parent container the property `display: flex`. 
 
-This automagically set all of the items inside the container to be side-by-side.
+This automagically sets all of the items inside the container to be side-by-side.
 
 ---
 
